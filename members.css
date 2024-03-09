@@ -70,8 +70,10 @@
     bottom: 100px; /* Adjust as needed */
     width: 100%;
     text-align: center;
-    overflow-x: auto; /* Enable horizontal scrolling */
+    overflow-x: hidden; /* Remove horizontal scrolling */
+    overflow-y: hidden; /* Remove vertical scrolling */
 }
+
 
 .banner-content h1 {
     color: #fff; /* Text color */
@@ -207,3 +209,22 @@ button:hover i::after {
         box-shadow: #27272c;
     }
 }
+.image-with-text img {
+    width: 200px; /* Adjust image width */
+    height: auto; /* Maintain aspect ratio */
+    border: 2px solid #fff; /* Add border style */
+}
+@keyframes rainbow-border {
+    0% { background-position: 0 0; }
+    100% { background-position: 100% 0; }
+}
+
+.image-with-text img {
+    width: 200px; /* Adjust image width */
+    height: auto; /* Maintain aspect ratio */
+    border: 2px solid;
+    border-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet) 1; /* Define linear gradient for border */
+    animation: rainbow-border 5s linear infinite; /* Apply animation */
+}
+
+
