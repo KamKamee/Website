@@ -3,49 +3,129 @@
     padding: 0;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-.banner{
-    width: 100;
+body{
+    background: #000 !important;
+    color: #fff !important;
+}
+.service-box{
+    box-shadow: 0 0 4px 0 #ffa709;
+    padding: 15px;
+    position: relative;
+    margin: 15px;
+}
+.fa{
+    font-size: 40px !important;
+    margin-bottom: 20px;
+    background: linear-gradient(to right, #ff105f, #ffad06);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+p{
+    text-align: justify;
+}
+a{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: block;
+    text-align: center;
+    position: absolute;
+    bottom: -20px;
+    right: 20px;
+    background: linear-gradient(to right, #ff105f, #ffad06);
+}
+span{
+    background: linear-gradient(to right, #ff105f, #ffad06);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+a .fa{
+    color: #fff;
+    font-size: 25px !important;
+    padding-top: 6px;
+}
+.Home{
+    background: none;
+}
+.banner {
+    width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(background.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(background.jpg);
     background-size: contain;
     background-position: center;
 }
-.navbar{
-    width: 85%;
-    margin: auto;
-    padding: 35px 0;
+
+.navbar {
+    width: 100%; 
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: absolute; 
+    top: 0; 
 }
-.logo{
-    width: 120px;
+
+.logo {
+    width: 50px;
     cursor: pointer;
 }
-.navbar ul li{
+
+.navbar ul {
     list-style: none;
-    display: inline-block;
-    margin: 0 20px;
-    position: relative;
+    display: flex;
 }
-.navbar ul li a{
+
+.navbar ul li {
+    margin-right: 20px;
+}
+
+.navbar ul li a {
     text-decoration: none;
     color: #fff;
     text-transform: uppercase;
+    position: relative;
 }
-.navbar ul li::after{
+
+.navbar ul li a::after {
     content: '';
     height: 3px;
     width: 0;
     background: #009688;
     position: absolute;
     left: 0;
-    bottom: -10px;
-    transition: 0.5s;
+    bottom: -5px;
+    transition: width 0.3s ease;
 }
-.navbar ul li:hover::after{
+
+.navbar ul li a:hover::after {
     width: 100%;
 }
+body {
+    overflow-x: hidden;
+}
+.dark-blue {
+    color: #002f6c; /* Darkest shade of blue */
+}
+
+.medium-blue {
+    color: #125fb7; /* Medium shade of blue */
+}
+
+.light-blue {
+    color: #5893d4; /* Lightest shade of blue */
+}
+
+.glowing {
+    text-shadow: 
+        0 0 10px #002f6c,
+        0 0 20px #125fb7,
+        0 0 30px #5893d4,
+        0 0 40px #125fb7,
+        0 0 50px #002f6c,
+        0 0 60px #002f6c,
+        0 0 70px #002f6c; /* Adjust blur radius and color as needed */
+    animation: glow 1.5s infinite alternate; /* Animation for the glowing effect */
+}
+
 #preloader{
     background: #000 url(loader.gif) no-repeat center center;
     background-size: 20%;
