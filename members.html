@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EmTech Website Group3</title>
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
     <link rel="stylesheet" href="members.css">
 </head>
 <body>
@@ -13,50 +14,101 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
             </ul>
+        </div>        
+        <div class="hero">
+            <h1>Group Members</h1>
+            <div class="review-box">
+                <div id="slide">
+                    <div class="card">
+                        <div class="profile">
+                            <img src="image1.jpg">
+                            <div>
+                                <H3>Name</H3>
+                                <p>Lorem ipsum dolor sit amet.</p>  
+                            </div>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                    </div>
+                    <div class="card">
+                        <div class="profile">
+                            <img src="image2.jpg">
+                            <div>
+                                <H3>Name</H3>
+                                <p>Lorem ipsum dolor sit amet.</p>  
+                            </div>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                    </div>
+                    <div class="card">
+                        <div class="profile">
+                            <img src="image3.jpg">
+                            <div>
+                                <H3>Name</H3>
+                                <p>Lorem ipsum dolor sit amet.</p>  
+                            </div>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                    </div>
+                    <div class="card">
+                        <div class="profile">
+                            <img src="image4.jpg">
+                            <div>
+                                <H3>Name</H3>
+                                <p>Lorem ipsum dolor sit amet.</p>  
+                            </div>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                    </div>
+                    <div class="card">
+                        <div class="profile">
+                            <img src="image5.jpg">
+                            <div>
+                                <H3>Name</H3>
+                                <p>Lorem ipsum dolor sit amet.</p>  
+                            </div>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                    </div>
+                    <div class="card">
+                        <div class="profile">
+                            <img src="image6.jpg">
+                            <div>
+                                <H3>Name</H3>
+                                <p>Lorem ipsum dolor sit amet.</p>  
+                            </div>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                    </div>
+                </div>
+                <div class="sidebar">
+                    <img src="up-arrow.png" id="upArrow">
+                    <img src="down-arrow.png" id="downArrow">
+                </div>
+            </div>
         </div>
     </div>
-    <div class="banner-content">
-        <div class="image-container">
-            <div class="image-with-text">
-                <h1>Name</h1>
-                <img src="image1.jpg" alt="Image 1">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, recusandae.</p>
-            </div>
-            <div class="image-with-text">
-                <h1>Name</h1>
-                <img src="image2.jpg" alt="Image 2">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis, optio!</p>
-            </div>
-            <div class="image-with-text">
-                <h1>Name</h1>
-                <img src="image2.jpg" alt="Image 2">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, officia.</p>
-            </div>
-            <div class="image-with-text">
-                <h1>Name</h1>
-                <img src="image3.jpg" alt="Image 3">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, deserunt!</p>
-            </div>
-            <div class="image-with-text">
-                <h1>Name</h1>
-                <img src="image4.jpg" alt="Image 3">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, optio.</p>
-            </div>
-            <div class="image-with-text">
-                <h1>Name</h1>
-                <img src="image5.jpg" alt="Image 3">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, obcaecati.</p>
-            </div>
-            <div class="image-with-text">
-                <h1>Name</h1>
-                <img src="image6.jpg" alt="Image 3">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti, maxime.</p>
-            </div>
-        </div>
-        <button id="Previous" style="--clr:#39FF14"><span>Previous</span><i></i></button>
-        <button id="Next" style="--clr:#FF44CC"><span>Next</span><i></i></button>
-    </div>
+    <script>
+        var slide = document.getElementById("slide");
+        var upArrow = document.getElementById("upArrow");
+        var downArrow = document.getElementById("downArrow");
 
-    <script src="script.js"></script> 
+        let x = 0;
+
+        upArrow.onclick = function(){
+            if(x > "-1800"){
+            x = x - 300;
+            slide.style.top = x + "px";
+            }
+        }
+
+        downArrow.onclick = function(){
+            if(x < 0){
+            x = x + 300;
+            slide.style.top = x + "px";
+            }
+        }
+
+    </script>
+
 </body>
 </html>
