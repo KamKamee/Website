@@ -180,6 +180,11 @@ h1::after {
 body {
     overflow-x: hidden;
 }
+span{
+    background: linear-gradient(to right, #ff105f, #ffad06);
+    -webkit-background-clip: text;
+    color: transparent;
+}
 #preloader{
     background: #000 url(loader.gif) no-repeat center center;
     background-size: 20%;
