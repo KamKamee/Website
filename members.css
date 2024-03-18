@@ -19,9 +19,15 @@ h1 {
     position: relative;
     margin-bottom: 80px;
 }
+p{
+    font-size: 15px;
+    display: flex;
+    color: #000;
+    text-align: justify;
+}
 .hero h1 {
-    color: #ffffff; /* Change the color to white or another light color */
-    text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #ffffff; /* Adjust the shadow values to create a glowing effect */
+    color: #ffffff; 
+    text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #ffffff; 
 }
 
 
@@ -48,31 +54,32 @@ h1::after {
 
 .card {
     height: 300px;
-    padding: 40px;
+    padding: 25px;
+    padding-bottom: 0%;
+
     color: #777;
     line-height: 22px;
     box-sizing: border-box;
     background: #fff;
     position: relative;
+    padding-bottom: 0;
     z-index: 1;
 }
 
 .profile {
     display: flex;
     align-items: center;
-    margin-bottom: 40px;
 }
 
 .profile img {
-    width: 70px;
-    border-radius: 50%;
-    margin-right: 20px;
+    width: 63px;
+    border-radius: 25%;
+    margin-right: 30px;
 }
 
 .profile h3 {
     font-size: 26px;
     color: blueviolet;
-    margin-bottom: 8px;
 }
 
 #slide {
